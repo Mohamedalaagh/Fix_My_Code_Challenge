@@ -15,15 +15,15 @@ def fizzbuzz(n):
         return
 
     tmp_result = []
-    for j in range(1, n + 1):
-        if (j % 3) == 0 and (j % 5) == 0:
+    for i in range(1, n + 1):
+        if (i % 3) == 0 and (i % 5) == 0:
             tmp_result.append("FizzBuzz")
-        elif (j % 3) == 0:
+        elif (i % 3) == 0:
             tmp_result.append("Fizz")
-        elif (j % 5) == 0:
+        elif (i % 5) == 0:
             tmp_result.append("Buzz")
         else:
-            tmp_result.append(str(j))
+            tmp_result.append(str(i))
     print(" ".join(tmp_result))
 
 
@@ -36,4 +36,3 @@ if __name__ == '__main__':
 
     number = int(sys.argv[1])
     fizzbuzz(number)
-
